@@ -1,0 +1,81 @@
+// :::: $vars ::::
+
+$brand-primary: #fa3;
+$frm-fill: #6e98fa;
+$btn-primary: #b16935;
+$dark: #031b53;
+$light: #ffd;
+$box-std: 40%;
+$gutter-std: 5%;
+
+// :::: global styles ::::
+
+body {
+  font-family: helvetica;
+  font-size: 2vw;
+  background: $brand-primary;
+}
+
+h2 {
+  font-size: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+  margin: $gutter-std;
+  color: $dark;
+  font-weight: bold;
+}
+
+button {
+  width: $box-std;
+  height: $gutter-std;
+  padding: $gutter-std - .4%;
+  margin-top: $gutter-std + 2.2%;
+  background: $btn-primary;
+  color: $dark;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 350ms all;
+
+  &:hover {
+    background: $frm-fill;
+  }
+}
+
+input[type="text"] {
+  float: left;
+  width: $box-std;
+  margin: $gutter-std + 2.5%;
+  padding: 2%;
+  border: none;
+  border-radius: 3px;
+}
+
+pre {
+  font-family: monospace;
+  margin: $gutter-std;
+}
+
+// :::: app styles ::::
+
+.container {
+  width: $box-std;
+  margin: 5%;
+}
+
+
+
+.text-binder {
+  // clear: both;
+  height: 15vw;
+  font-size: 3vw;
+  margin: $gutter-std;
+  padding: 1vw;
+  color: $light;
+  background: $frm-fill;
+
+  + input {
+    width: $box-std * 2;
+    margin: $gutter-std + 2.5%;
+  }
+}
